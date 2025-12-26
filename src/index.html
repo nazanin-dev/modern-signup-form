@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <title>create account</title>
+  </head>
+  <body
+    class="bg-gray-700 h-screen flex justify-center items-center overflow-hidden"
+  >
+    <main
+      class="max-h-screen bg-white w-full max-w-6xl grid grid-cols-1 md:grid-cols-2 overflow-hidden rounded-4xl p-2 md:p-3"
+    >
+      <aside class="hidden md:flex">
+        <div class="image-container rounded-4xl overflow-hidden">
+          <img
+            src="/src/images/pics (1).jpg"
+            alt="VR picture"
+            class="w-full h-full object-cover"
+          />
+        </div>
+      </aside>
+      <section
+        class="p-6 sm:p-8 md:p-12 rounded-4xl min- h-full max-h-[90vh] overflow-y-auto"
+      >
+        <header class="mb-8">
+          <button type="button" aria-label="Go back" class="mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-5 text-gray-600"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18"
+              />
+            </svg>
+          </button>
+          <h1 class="text-3xl md:text-4xl mb-2 font-semibold">
+            Create an Account
+          </h1>
+          <p class="text-sm">
+            Already have an account? <a href="#" class="underline">Login</a>
+          </p>
+        </header>
+        <!-- form -->
+        <form action="#" class="space-y-2 md:space-y-3">
+          <fieldset class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col gap-2">
+              <label for="first-name" class="font-medium text-sm text-gray-700"
+                >First Name</label
+              >
+              <input
+                type="text"
+                id="first-name"
+                placeholder="Nazanin"
+                class="border border-gray-300 rounded-4xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black/70 transition"
+              />
+            </div>
+            <div class="flex flex-col gap-2">
+              <label for="last-name" class="font-medium text-sm text-gray-700"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                placeholder="Seyfi"
+                id="last-name"
+                class="border border-gray-300 rounded-4xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black/70 transition"
+              />
+            </div>
+          </fieldset>
+          <!-- number -->
+          <div class="flex flex-col gap-2">
+            <label for="tel" class="font-medium text-sm text-gray-700"
+              >Number</label
+            >
+            <input
+              id="number"
+              type="tel"
+              placeholder="333-333-3333"
+              class="border border-gray-300 rounded-4xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black/70 transition"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label for="email" class="font-medium text-sm text-gray-700"
+              >Email Address</label
+            >
+            <input
+              type="email"
+              placeholder="example@gmail.com"
+              class="border border-gray-300 rounded-4xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-black/70 transition"
+            />
+          </div>
+          <!-- Password -->
+          <div class="flex flex-col gap-2">
+            <label for="password" class="font-medium text-sm text-gray-700">
+              Password
+            </label>
+            <div class="relative">
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                class="w-full border border-gray-300 rounded-4xl px-4 py-2 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-black/70 transition"
+              />
+
+              <button
+                id="togglePassword"
+                type="button"
+                aria-label="Show password"
+                aria-pressed="false"
+                class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 transition cursor-pointer"
+              >
+                <svg
+                  id="eyeClosed"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M20 14.8335C21.3082 13.3317 22 12 22 12C22 12 18.3636 5 12 5C11.6588 5 11.3254 5.02013 11 5.05822C10.6578 5.09828 10.3244 5.15822 10 5.23552M12 9C12.3506 9 12.6872 9.06015 13 9.17071C13.8524 9.47199 14.528 10.1476 14.8293 11C14.9398 11.3128 15 11.6494 15 12M3 3L21 21M12 15C11.6494 15 11.3128 14.9398 11 14.8293C10.1476 14.528 9.47198 13.8524 9.1707 13C9.11386 12.8392 9.07034 12.6721 9.04147 12.5M4.14701 9C3.83877 9.34451 3.56234 9.68241 3.31864 10C2.45286 11.1282 2 12 2 12C2 12 5.63636 19 12 19C12.3412 19 12.6746 18.9799 13 18.9418"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <!-- open eyes -->
+                <svg
+                  id="eyeOpen"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-5 h-5 hidden"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M2.5 12s3.5-7 9.5-7 9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <!-- confirm password -->
+          <div class="flex flex-col gap-2">
+            <label
+              for="confirmPassword"
+              class="font-medium text-sm text-gray-700"
+            >
+              Confirm password
+            </label>
+            <div class="relative">
+              <input
+                type="password"
+                id="confirmPassword"
+                placeholder="Password"
+                class="w-full border border-gray-300 rounded-4xl px-4 py-2 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-black/70 transition"
+              />
+
+              <button
+                id="toggleConfirmPassword"
+                type="button"
+                aria-label="Show password"
+                aria-pressed="false"
+                class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-700 transition cursor-pointer"
+              >
+                <svg
+                  id="eyeClosedConfirm"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M20 14.8335C21.3082 13.3317 22 12 22 12C22 12 18.3636 5 12 5C11.6588 5 11.3254 5.02013 11 5.05822C10.6578 5.09828 10.3244 5.15822 10 5.23552M12 9C12.3506 9 12.6872 9.06015 13 9.17071C13.8524 9.47199 14.528 10.1476 14.8293 11C14.9398 11.3128 15 11.6494 15 12M3 3L21 21M12 15C11.6494 15 11.3128 14.9398 11 14.8293C10.1476 14.528 9.47198 13.8524 9.1707 13C9.11386 12.8392 9.07034 12.6721 9.04147 12.5M4.14701 9C3.83877 9.34451 3.56234 9.68241 3.31864 10C2.45286 11.1282 2 12 2 12C2 12 5.63636 19 12 19C12.3412 19 12.6746 18.9799 13 18.9418"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <!-- open eyes -->
+                <svg
+                  id="eyeOpenConfirm"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  class="w-5 h-5 hidden"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                >
+                  <path
+                    d="M2.5 12s3.5-7 9.5-7 9.5 7 9.5 7-3.5 7-9.5 7-9.5-7-9.5-7Z"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle cx="12" cy="12" r="3" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-2">
+            <button
+              class="bg-black text-white rounded-2xl w-full py-3 text-sm font-medium hover:bg-gray-700 transition"
+            >
+              Create Account
+            </button>
+          </div>
+          <div class="flex items-center space-x-0.5 text-sm text-gray-600">
+            <input id="form" type="checkbox" class="w-3 h-3 cursor-pointer" />
+            <label for="form" class="">
+              I agree to the
+              <a href="#" class="underline font-bold"
+                >the terms and conditions</a
+              >
+            </label>
+          </div>
+        </form>
+        <div class="flex items-center justify-center py-4">
+          <div class="flex-grow border-t border-gray-300"></div>
+
+          <span class="px-3 text-gray-500 text-sm">or</span>
+
+          <div class="flex-grow border-t border-gray-300"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 py-4 px-1">
+          <button
+            class="h-12 flex items-center justify-center gap-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition"
+          >
+            <span
+              ><img
+                src="/src/icons/google-color-svgrepo-com.svg"
+                alt="facebook-icon"
+                class="w-6"
+            /></span>
+            <p>continue with google</p>
+          </button>
+          <button
+            class="h-12 flex items-center justify-center gap-2 border border-gray-300 rounded-full text-sm hover:bg-gray-50 transition"
+          >
+            <span
+              ><img
+                src="/src/icons/facebook-svgrepo-com.svg"
+                alt="facebook-icon"
+                class="w-6"
+            /></span>
+            <p>continue with facebook</p>
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="/src/script.js"></script>
+  </body>
+</html>
