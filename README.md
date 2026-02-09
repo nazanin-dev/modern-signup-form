@@ -18,9 +18,9 @@ A modern and responsive signup form built with Vanilla JavaScript and Tailwind C
 👉 https://nazanin-dev.github.io/modern-signup-form/
 
 Desktop view:  
-![Signup Form Desktop](images/formDesktop.png)
+![Signup Form Desktop](src/images/formDesktop.png)
 Mobile view:  
-![Signup Form Mobile](images/formMobile.png)
+![Signup Form Mobile](src/images/formMobile.png)
 
 👩‍💻 Developed by Nazanin Seyfi
 
